@@ -1,3 +1,21 @@
+const btns = document.querySelectorAll("button");
+const display = document.getElementById("display");
+let num1 = "";
+let = btnKey = "";
+
+btns.forEach(addEventListener("click",pressKey));
+
+function pressKey (e) {
+   const key = e.target.value;
+   if (key === undefined) {
+    console.log("choose a valid button you fool!")
+   }
+   else {
+    num1 += key;
+    display.textContent = num1;
+   }
+}
+
 function add (a, b) {    
     return a + b;
 }
