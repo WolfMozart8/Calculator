@@ -5,31 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rationale&display=swap" rel="stylesheet">
     <title>Calculator</title>
 </head>
 <body>
+    <div id="fff">
+        <p id="f1">a</p>
+        <p id="f2">b</p>
+        <p id="f3">c</p>
+        <p id="f4">d</p>
+    </div>
     <div id="calculator">
         <div><div id="display"></div></div>
      <div id="buttons">
         <div class="numbs">
-        <button value="7">7</button>
-        <button value="8">8</button>
-        <button value="9">9</button>
-        <button value="4">4</button>
-        <button value="5">5</button>
-        <button value="6">6</button>
-        <button value="1">1</button>
-        <button value="2">2</button>
-        <button value="3">3</button>
-    </div>
-        <button value="c">C</button>
-        <button value="*">x</button>
-        <button value="/">/</button>
-        <button value="-">-</button>
-        <button value="+">+</button>
+        <button class="button" value="7">7</button>
+        <button class="button" value="8">8</button>
+        <button class="button" value="9">9</button>
+        <button class="button" value="4">4</button>
+        <button class="button" value="5">5</button>
+        <button class="button" value="6">6</button>
+        <button class="button" value="1">1</button>
+        <button class="button" value="2">2</button>
+        <button class="button" value="3">3</button>
+    </div> 
+        <button id="clearCalc" value="c">C</button>
+        <button class="operator" value="*">x</button>
+        <button class="operator" value="/">/</button>
+        <button class="operator" value="-">-</button>
+        <button class="operator" value="+">+</button>
         <button id="equal" value="=">=</button>
-        <button id="dot" value=".">.</button>
-        <button id="zero" value="0">0</button>
+        <button class="button" id="dot" value=".">.</button>
+        <button class="button" id="zero" value="0">0</button>
     </div> <!--buttons-->
 </div> <!--Calculator-->
 <script src="./script.js"></script>

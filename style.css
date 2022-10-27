@@ -1,15 +1,19 @@
 body {
     background-color: ivory;
 }
+#fff {
+    position: absolute;
+}
 #calculator {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 460px;
+    overflow: hidden;
+    width: 438px;
     margin: 0 auto;
     height: 620px;
     padding: 50px;
-    background-color: orangered;
+    background-color: rgb(13, 19, 72);
     
 }
 #display {
@@ -19,6 +23,10 @@ body {
     text-align: right;
     margin: 30px;
     background-color: darkolivegreen;
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
 }
 #buttons {
     display: grid;
