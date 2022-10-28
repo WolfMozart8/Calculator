@@ -11,34 +11,35 @@
     <title>Calculator</title>
 </head>
 <body>
-    <div id="fff">
-        <p id="f1">a</p>
-        <p id="f2">b</p>
-        <p id="f3">c</p>
-        <p id="f4">d</p>
-    </div>
     <div id="calculator">
-        <div><div id="display"></div></div>
+        <div id="screen">
+            <div id="op"></div>
+            <div id="display">
+            </div>
+        </div> <!--screen-->
      <div id="buttons">
         <div class="numbs">
-        <button class="button" value="7">7</button>
-        <button class="button" value="8">8</button>
-        <button class="button" value="9">9</button>
-        <button class="button" value="4">4</button>
-        <button class="button" value="5">5</button>
-        <button class="button" value="6">6</button>
-        <button class="button" value="1">1</button>
-        <button class="button" value="2">2</button>
-        <button class="button" value="3">3</button>
-    </div> 
-        <button id="clearCalc" value="c">C</button>
-        <button class="operator" value="*">x</button>
-        <button class="operator" value="/">/</button>
-        <button class="operator" value="-">-</button>
-        <button class="operator" value="+">+</button>
-        <button id="equal" value="=">=</button>
-        <button class="button" id="dot" value=".">.</button>
-        <button class="button" id="zero" value="0">0</button>
+        <button data-key="55" class="button" value="7">7</button>
+        <button data-key="56" class="button" value="8">8</button>
+        <button data-key="57" class="button" value="9">9</button>
+        <button data-key="52" class="button" value="4">4</button>
+        <button data-key="53" class="button" value="5">5</button>
+        <button data-key="54" class="button" value="6">6</button>
+        <button data-key="49" class="button" value="1">1</button>
+        <button data-key="50" class="button" value="2">2</button>
+        <button data-key="51" class="button" value="3">3</button>
+    </div> <!-- (numbers) buttons-->
+        <div id="delC">
+        <button title="Press 'c'" data-key="67" id="clearCalc" value="c">C</button>
+        <button title="Press 'Backspace'" data-key="8" id="del" value="del">del</button>
+        </div> <!--del and C buttons-->
+        <button title="Press 'x'" data-key="88" class="operator" value="*">x</button>
+        <button title="Press 'd'" data-key="68" class="operator" value="/">/</button>
+        <button title="Press 's'" data-key="83" class="operator" value="-">-</button>
+        <button title="Press 'a'" data-key="65" class="operator" value="+">+</button>
+        <button title="Press 'm'" data-key="77" id="equal" value="=">=</button>
+        <button data-key="190" id="dot" value=".">.</button>
+        <button data-key="48" class="button" id="zero" value="0">0</button>
     </div> <!--buttons-->
 </div> <!--Calculator-->
 <script src="./script.js"></script>
